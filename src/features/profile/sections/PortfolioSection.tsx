@@ -19,7 +19,7 @@ export function PortfolioSection() {
       </h2>
       <div className={styles.sectionBody}>
         <p className={leadStyles.lead}>
-          制作したポートフォリオです。実際に画面を見たい、動作を確認したい場合は、アコーディオンを開いて資料PDF内にアプリのリンク、テストアカウントの案内があるのでそちらを参照してください。
+          FE,BE共に作成、デプロイまでしたポートフォリオです。実際に画面を見たい、動作を確認したい場合は、アコーディオンを開いて資料PDF内にアプリのリンク、テストアカウントの案内があるのでそちらを参照してください。
         </p>
         {PORTFOLIO_ITEMS.length > 0 ? (
           <ProfileDetailsAccordion
