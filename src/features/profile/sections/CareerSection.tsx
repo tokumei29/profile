@@ -16,7 +16,7 @@ export function CareerSection() {
       </h2>
       <div className={styles.sectionBody}>
         <p className={leadStyles.lead}>
-          これまでの主な在籍・業務内容です。期間・内容は随時更新します。
+          これまでの主な在籍・業務内容です。期間・内容は随時更新します（スマホ、タブレットで見る場合は横スクロールできます）。
         </p>
         <ProfileDetailsAccordion
           summaryTitle="業務経歴の詳細を表示"
