@@ -48,7 +48,7 @@ export const ProfilePage = () => {
               <p className={styles.badge}>Official profile wiki</p>
               <h1 className={styles.title}>プロフィール Wiki</h1>
               <p className={styles.lead}>
-                本ページは、私の経歴・活動・リンクを明示する目的で運営しています。皆様が、信頼できる要約にアクセスできるよう構成しています。
+                本ページは、私の経歴・活動・リンクを明示する目的で運営しています。皆様が、信頼できる情報にアクセスできるよう構成しています。このwikiはNext.js v16, TypeScriptで構築されております。
               </p>
             </header>
 
