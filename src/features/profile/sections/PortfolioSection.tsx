@@ -93,7 +93,7 @@ export function PortfolioSection() {
                             rel="noopener noreferrer"
                             className={styles.portfolioLink}
                           >
-                            GitHub（FE）
+                            GitHub（フロントエンド）
                           </a>
                         ) : null}
                         {item.githubBeUrl ? (
@@ -103,7 +103,7 @@ export function PortfolioSection() {
                             rel="noopener noreferrer"
                             className={styles.portfolioLink}
                           >
-                            GitHub（BE）
+                            GitHub（バックエンド）
                           </a>
                         ) : null}
                         {item.pdfUrl ? (
@@ -113,7 +113,7 @@ export function PortfolioSection() {
                             rel="noopener noreferrer"
                             className={styles.portfolioLink}
                           >
-                            資料 PDF
+                            ポートフォリオの資料 PDF
                           </a>
                         ) : null}
                       </div>
