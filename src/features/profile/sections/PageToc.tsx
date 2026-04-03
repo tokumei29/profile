@@ -1,5 +1,5 @@
 import { PAGE_TOC_ITEMS } from '../constants';
-import styles from '../wiki.module.css';
+import styles from './PageToc.module.css';
 
 export function PageToc() {
   return (

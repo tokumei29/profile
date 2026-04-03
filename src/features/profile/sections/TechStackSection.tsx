@@ -1,9 +1,9 @@
-import styles from '../wiki.module.css';
+import styles from './TechStackSection.module.css';
 
 export function TechStackSection() {
   return (
-    <section className={styles.section} aria-labelledby="sec-activity">
-      <h2 id="sec-activity" className={styles.sectionTitle}>
+    <section className={styles.section} aria-labelledby="技術スタック">
+      <h2 id="技術スタック" className={styles.sectionTitle}>
         技術スタック
       </h2>
       <div className={styles.sectionBody}>

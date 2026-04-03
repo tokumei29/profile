@@ -1,0 +1,52 @@
+/* ページ内目次 */
+
+.tocNav {
+  margin-bottom: 1.75rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #f8fafc 0%, #fff 100%);
+}
+
+.tocNavTitle {
+  margin: 0 0 0.65rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.tocList {
+  margin: 0;
+  padding: 0 0 0 1.15rem;
+  list-style: decimal;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: #334155;
+}
+
+.tocList li {
+  margin-bottom: 0.35rem;
+}
+
+.tocList li:last-child {
+  margin-bottom: 0;
+}
+
+.tocLink {
+  color: #1d4ed8;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 500;
+}
+
+.tocLink:hover {
+  color: #1e40af;
+}
+
+.tocLink:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  border-radius: 2px;
+}

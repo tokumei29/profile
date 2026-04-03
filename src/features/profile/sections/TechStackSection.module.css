@@ -1,0 +1,130 @@
+/* TechStackSection — セクション枠 */
+
+.section {
+  margin-bottom: 2.25rem;
+  scroll-margin-top: 1.25rem;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #0f172a;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.sectionBody {
+  font-size: 0.9375rem;
+  color: #334155;
+}
+
+.sectionBody p + p {
+  margin-top: 0.85em;
+}
+
+.sectionBody h3 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 1.25rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.sectionBody h3:first-child {
+  margin-top: 0;
+}
+
+.proseList {
+  margin: 0.75rem 0 0 1.25rem;
+  padding: 0;
+}
+
+.proseList li {
+  margin-bottom: 0.45em;
+}
+
+.proseList li::marker {
+  color: #94a3b8;
+}
+
+/* 技術スタック：パネル・強みリスト */
+
+.stackPanel {
+  margin-top: 0.75rem;
+  padding: 1rem 1.125rem;
+  background: #f8fafc;
+  border: 1px solid #e8ecf2;
+  border-radius: 6px;
+}
+
+.techStackDl {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.techStackItem {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 0.75rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.techStackItem dt {
+  margin: 0;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.techStackItem dd {
+  margin: 0;
+  color: #64748b;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.techStackFootnote {
+  margin: 0.75rem 0 0;
+  padding-top: 0.75rem;
+  border-top: 1px dashed #cbd5e1;
+  font-size: 0.8125rem;
+  color: #64748b;
+  line-height: 1.55;
+}
+
+.strengthList {
+  list-style: none;
+  margin: 0.65rem 0 0;
+  padding: 0;
+}
+
+.strengthList > li {
+  margin: 0 0 1rem;
+  padding-left: 0.85rem;
+  border-left: 3px solid #cbd5e1;
+  line-height: 1.65;
+}
+
+.strengthList > li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 420px) {
+  .techStackItem {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  .techStackItem dd {
+    white-space: normal;
+  }
+}

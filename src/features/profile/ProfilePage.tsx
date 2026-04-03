@@ -1,7 +1,7 @@
 'use client';
 
 import Head from 'next/head';
-import styles from './wiki.module.css';
+import styles from './ProfilePage.module.css';
 import {
   BioSection,
   CareerSection,

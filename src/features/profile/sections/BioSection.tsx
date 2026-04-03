@@ -1,9 +1,9 @@
-import styles from '../wiki.module.css';
+import styles from './BioSection.module.css';
 
 export function BioSection() {
   return (
-    <section className={styles.section} aria-labelledby="sec-bio">
-      <h2 id="sec-bio" className={styles.sectionTitle}>
+    <section className={styles.section} aria-labelledby="略歴">
+      <h2 id="略歴" className={styles.sectionTitle}>
         略歴
       </h2>
       <div className={styles.sectionBody}>

@@ -1,0 +1,102 @@
+/* 業務経歴・ポートフォリオ共通の details アコーディオン */
+
+.accordion {
+  margin-top: 0.35rem;
+  border-radius: 10px;
+  border: 2px solid #cbd5e1;
+  background: linear-gradient(145deg, #f8fafc 0%, #fff 55%);
+  box-shadow:
+    0 1px 3px rgba(15, 23, 42, 0.06),
+    0 8px 24px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.15rem;
+  cursor: pointer;
+  list-style: none;
+  font: inherit;
+  color: inherit;
+  user-select: none;
+}
+
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary:hover {
+  background: rgba(59, 130, 246, 0.06);
+}
+
+.summary:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.summaryText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  text-align: left;
+  min-width: 0;
+}
+
+.summaryTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+
+.summaryMeta {
+  font-size: 0.8125rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.summaryIcon {
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  position: relative;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35);
+}
+
+.summaryIcon::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: transform 0.25s ease;
+}
+
+.accordion[open] .summaryIcon::before {
+  top: 55%;
+  transform: translate(-50%, -50%) rotate(225deg);
+}
+
+.content {
+  margin: 0;
+  border-top: 1px solid #e2e8f0;
+  background: #fff;
+}
+
+.contentScroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.contentPadded {
+  padding: 1rem 1.15rem 1.25rem;
+}

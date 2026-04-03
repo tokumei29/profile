@@ -1,15 +1,15 @@
 import type { CSSProperties } from 'react';
 import { TECH_BLOG_LINKS } from '../constants';
 import { useRevealOnScroll } from '../useRevealOnScroll';
-import styles from '../wiki.module.css';
+import styles from './TechBlogSection.module.css';
 
 export function TechBlogSection() {
   const [blogCardGridRef, blogCardsRevealed] =
     useRevealOnScroll<HTMLDivElement>();
 
   return (
-    <section className={styles.section} aria-labelledby="sec-blogs">
-      <h2 id="sec-blogs" className={styles.sectionTitle}>
+    <section className={styles.section} aria-labelledby="技術ブログ">
+      <h2 id="技術ブログ" className={styles.sectionTitle}>
         技術ブログ
       </h2>
       <div className={styles.sectionBody}>
@@ -56,7 +56,7 @@ export function TechBlogSection() {
           </div>
         ) : (
           <p className={styles.relatedEmpty}>
-            掲載するリンクは <code>constants/techBlog.ts</code> の{' '}
+            掲載するリンクは <code>constants/TechBlog.ts</code> の{' '}
             <code>TECH_BLOG_LINKS</code> に <code>label</code> と{' '}
             <code>href</code> を追加してください。
           </p>

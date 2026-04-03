@@ -1,0 +1,169 @@
+/* TechBlogSection — セクション枠 */
+
+.section {
+  margin-bottom: 2.25rem;
+  scroll-margin-top: 1.25rem;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #0f172a;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.sectionBody {
+  font-size: 0.9375rem;
+  color: #334155;
+}
+
+.sectionBody p + p {
+  margin-top: 0.85em;
+}
+
+.sectionBody h3 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 1.25rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.sectionBody h3:first-child {
+  margin-top: 0;
+}
+
+.proseList {
+  margin: 0.75rem 0 0 1.25rem;
+  padding: 0;
+}
+
+.proseList li {
+  margin-bottom: 0.45em;
+}
+
+.proseList li::marker {
+  color: #94a3b8;
+}
+
+/* 技術ブログ：カードグリッド */
+
+.relatedIntro {
+  margin-bottom: 0.75rem;
+}
+
+.relatedEmpty {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.blogCardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr));
+  gap: 1rem;
+  margin-top: 0.85rem;
+}
+
+.blogCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1.15rem 1.2rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  border-top-width: 4px;
+  background: #fff;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+  transition:
+    opacity 0.55s ease,
+    transform 0.55s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+  transition-delay: var(--blog-card-delay, 0s);
+  opacity: 0;
+  transform: translateY(14px);
+}
+
+.blogCard:hover {
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1);
+}
+
+.blogCard:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.blogCardVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.blogCardZenn {
+  border-top-color: #3ea8ff;
+}
+
+.blogCardQiita {
+  border-top-color: #55c500;
+}
+
+.blogCardHeader {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+
+.blogCardBody {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: #64748b;
+}
+
+.blogCardFooter {
+  margin-top: auto;
+  padding-top: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #1d4ed8;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.blogCardQiita .blogCardFooter {
+  color: #3d8a00;
+}
+
+.blogCardArrow {
+  transition: transform 0.2s ease;
+}
+
+.blogCard:hover .blogCardArrow {
+  transform: translateX(3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blogCard {
+    opacity: 1;
+    transform: none;
+    transition:
+      box-shadow 0.2s ease,
+      border-color 0.2s ease;
+  }
+
+  .blogCardVisible {
+    opacity: 1;
+    transform: none;
+  }
+}

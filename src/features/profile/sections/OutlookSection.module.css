@@ -1,0 +1,54 @@
+/* OutlookSection — セクション枠 */
+
+.section {
+  margin-bottom: 2.25rem;
+  scroll-margin-top: 1.25rem;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #0f172a;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.sectionBody {
+  font-size: 0.9375rem;
+  color: #334155;
+}
+
+.sectionBody p + p {
+  margin-top: 0.85em;
+}
+
+.sectionBody h3 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 1.25rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.sectionBody h3:first-child {
+  margin-top: 0;
+}
+
+.proseList {
+  margin: 0.75rem 0 0 1.25rem;
+  padding: 0;
+}
+
+.proseList li {
+  margin-bottom: 0.45em;
+}
+
+.proseList li::marker {
+  color: #94a3b8;
+}

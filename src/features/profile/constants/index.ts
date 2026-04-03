@@ -1,4 +1,4 @@
-export { PAGE_TOC_ITEMS } from './pageToc';
-export { type PortfolioItem, PORTFOLIO_ITEMS } from './portfolio';
-export { type TechBlogLink, TECH_BLOG_LINKS } from './techBlog';
-export { type WorkHistoryRow, WORK_HISTORY } from './workHistory';
+export { PAGE_TOC_ITEMS } from './PageToc';
+export { type PortfolioItem, PORTFOLIO_ITEMS } from './Portfolio';
+export { type TechBlogLink, TECH_BLOG_LINKS } from './TechBlog';
+export { type WorkHistoryRow, WORK_HISTORY } from './WorkHistory';

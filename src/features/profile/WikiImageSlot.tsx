@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import styles from './wiki.module.css';
+import styles from './WikiImageSlot.module.css';
 
 type Props = {
   src: string;

@@ -1,9 +1,9 @@
-import styles from '../wiki.module.css';
+import styles from './OutlookSection.module.css';
 
 export function OutlookSection() {
   return (
-    <section className={styles.section} aria-labelledby="sec-outlook">
-      <h2 id="sec-outlook" className={styles.sectionTitle}>
+    <section className={styles.section} aria-labelledby="今後の展望">
+      <h2 id="今後の展望" className={styles.sectionTitle}>
         今後の展望
       </h2>
       <div className={styles.sectionBody}>

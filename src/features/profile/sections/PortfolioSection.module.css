@@ -1,0 +1,262 @@
+/* PortfolioSection — セクション枠 */
+
+.section {
+  margin-bottom: 2.25rem;
+  scroll-margin-top: 1.25rem;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #0f172a;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.sectionBody {
+  font-size: 0.9375rem;
+  color: #334155;
+}
+
+.sectionBody p + p {
+  margin-top: 0.85em;
+}
+
+.sectionBody h3 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 1.25rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.sectionBody h3:first-child {
+  margin-top: 0;
+}
+
+.proseList {
+  margin: 0.75rem 0 0 1.25rem;
+  padding: 0;
+}
+
+.proseList li {
+  margin-bottom: 0.45em;
+}
+
+.proseList li::marker {
+  color: #94a3b8;
+}
+
+/* ポートフォリオ：カード一覧 */
+
+.relatedEmpty {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.portfolioList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.portfolioCard {
+  display: grid;
+  grid-template-columns: minmax(0, 30%) 1fr;
+  gap: 1rem 1.25rem;
+  align-items: start;
+  padding: 1.15rem 1.2rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+  opacity: 0;
+  transform: translateY(14px);
+  /* アコーディオンを開くたび <ul key> で再マウントされ、毎回キーフレームが走る */
+  animation: portfolioCardIn 0.55s ease forwards;
+  animation-delay: var(--portfolio-card-delay, 0s);
+  transition: box-shadow 0.2s ease;
+}
+
+.portfolioCard:hover {
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1);
+}
+
+@keyframes portfolioCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolioCard {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    transition:
+      box-shadow 0.2s ease,
+      border-color 0.2s ease;
+  }
+}
+
+.portfolioCardMedia {
+  position: relative;
+  min-width: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f1f5f9;
+  border: 1px solid #e8ecf2;
+  aspect-ratio: 4 / 3;
+}
+
+.portfolioCardImg {
+  object-fit: cover;
+}
+
+.portfolioCardBody {
+  min-width: 0;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: #1e293b;
+}
+
+.portfolioCardTitle {
+  margin: 0 0 0.65rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.portfolioOutline {
+  margin: 0 0 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: #334155;
+}
+
+.portfolioBlock {
+  margin-bottom: 1rem;
+}
+
+.portfolioBlock:last-of-type {
+  margin-bottom: 0;
+}
+
+.portfolioSubheading {
+  margin: 0 0 0.5rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.portfolioTechList {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.portfolioTechRow {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.5rem 0.75rem;
+  align-items: start;
+}
+
+.portfolioTechLabel {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #f8fafc;
+  background: #475569;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.portfolioTechDetail {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #1e293b;
+}
+
+.portfolioText {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: #334155;
+  white-space: pre-line;
+}
+
+.portfolioLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed #e2e8f0;
+}
+
+.portfolioLink {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1d4ed8;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.portfolioLink:hover {
+  color: #1e40af;
+}
+
+.portfolioLink:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (max-width: 640px) {
+  .portfolioCard {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolioCardMedia {
+    max-width: 16rem;
+  }
+
+  .portfolioTechRow {
+    grid-template-columns: 1fr;
+    gap: 0.35rem 0;
+  }
+
+  .portfolioTechLabel {
+    white-space: normal;
+    justify-self: start;
+  }
+}
