@@ -8,6 +8,7 @@ import {
   OutlookSection,
   PageToc,
   PortfolioSection,
+  StrengthSection,
   TechBlogSection,
   TechStackSection,
 } from './sections';
@@ -58,6 +59,7 @@ export const ProfilePage = () => {
               <TechStackSection />
               <CareerSection />
               <PortfolioSection />
+              <StrengthSection />
               <TechBlogSection />
               <OutlookSection />
             </div>

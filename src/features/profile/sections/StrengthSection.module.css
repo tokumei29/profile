@@ -1,0 +1,145 @@
+.section {
+  margin-bottom: 2.25rem;
+  scroll-margin-top: 1.25rem;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  position: relative;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #0f172a;
+  padding-left: 0.85rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.sectionTitle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.06em;
+  bottom: calc(0.5rem + 2px);
+  width: 4px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #38bdf8 0%, #2563eb 45%, #1e40af 100%);
+  box-shadow: 0 1px 2px rgba(30, 64, 175, 0.2);
+}
+
+.sectionBody {
+  font-size: 0.9375rem;
+  color: #334155;
+}
+
+.sectionBody p + p {
+  margin-top: 0.85em;
+}
+
+.sectionBody h3 {
+  position: relative;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 1.25rem;
+  margin-bottom: 0.4rem;
+  padding-left: 0.75rem;
+  line-height: 1.4;
+}
+
+.sectionBody h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 1px;
+  background: #2563eb;
+  rotate: 45deg;
+}
+
+/* 既存の強みリスト */
+
+.strengthList {
+  list-style: none;
+  margin: 0.65rem 0 0;
+  padding: 0;
+}
+
+.strengthList > li {
+  margin: 0 0 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.65;
+}
+
+.strengthList > li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.strengthList > li:last-child {
+  margin-bottom: 0;
+}
+
+/* AIでは代替できない強みリスト */
+
+.aiStrengthList {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.aiStrengthItem {
+  display: flex;
+  gap: 0.875rem;
+  padding: 0.875rem 1rem;
+  background: #f8fafc;
+  border: 1px solid #e8ecf2;
+  border-radius: 6px;
+}
+
+.aiStrengthNumber {
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #cbd5e1;
+  line-height: 1;
+  padding-top: 0.1em;
+  font-variant-numeric: tabular-nums;
+}
+
+.aiStrengthTitle {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.3rem;
+  line-height: 1.5;
+}
+
+.aiStrengthBody {
+  font-size: 0.875rem;
+  color: #475569;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 420px) {
+  .aiStrengthItem {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}

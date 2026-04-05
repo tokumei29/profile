@@ -5,6 +5,7 @@ export const PAGE_TOC_ITEMS: { id: string; label: string }[] = [
   { id: '技術スタック', label: '技術スタック' },
   { id: '業務経歴', label: '業務経歴' },
   { id: 'ポートフォリオ', label: 'ポートフォリオ' },
+  { id: '私の強み', label: '私の強み' },
   { id: '技術ブログ', label: '技術ブログ' },
   { id: '今後の展望', label: '今後の展望' },
 ];
