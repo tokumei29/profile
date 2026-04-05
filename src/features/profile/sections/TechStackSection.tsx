@@ -10,7 +10,7 @@ export function TechStackSection() {
         <h3>メインの技術スタック</h3>
         <p>
           Next.js, React, TypeScript をフロントエンドの主軸とし、Rails
-          をバックエンドの主要技術として使用しています。これらの技術を活用したプロジェクト経験が豊富で、特に
+          をバックエンドの主要技術として使用しています。これらの技術を活用したプロジェクト経験、特に
           Web アプリケーションの設計・開発・運用に強みがあります。
         </p>
         <div className={styles.stackPanel}>
