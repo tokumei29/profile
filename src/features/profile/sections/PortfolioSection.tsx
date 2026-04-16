@@ -19,7 +19,9 @@ export function PortfolioSection() {
       </h2>
       <div className={styles.sectionBody}>
         <p className={leadStyles.lead}>
-          フロントエンド,バックエンド共に作成、デプロイまでしたポートフォリオです。実際に画面を見たい、動作を確認したい場合は、アコーディオンを開いて資料PDF内にアプリのリンク、テストアカウントの案内があるのでそちらを参照してください。
+          フロントエンド,バックエンド共に作成、したポートフォリオです。アコーディオンを開いて詳細を確認してください。<br />
+          1.CareBridgeはApp Storeでリリース中です。<br />
+          2.SecondPathに関しては実際に画面を見たい、動作を確認したい場合は、資料PDF内にアプリのリンク、テストアカウントの案内があるのでそちらを参照してください。
         </p>
         {PORTFOLIO_ITEMS.length > 0 ? (
           <ProfileDetailsAccordion
