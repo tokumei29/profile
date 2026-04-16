@@ -86,6 +86,16 @@ export function PortfolioSection() {
                         <p className={styles.portfolioText}>{item.concept}</p>
                       </div>
                       <div className={styles.portfolioLinks}>
+                        {item.appStoreUrl ? (
+                          <a
+                            href={item.appStoreUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.portfolioLink}
+                          >
+                            App Store（リリース中）
+                          </a>
+                        ) : null}
                         {item.githubFeUrl ? (
                           <a
                             href={item.githubFeUrl}
